@@ -24,10 +24,18 @@ h1 {
 }
 
 .items_container {
-  overflow-x: hidden;
+  
   white-space: nowrap;
   cursor: grab;
   transition: transform 1s ease;
+  overflow-x: scroll; 
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.items_container::-webkit-scrollbar {
+  display: none; 
 }
 
 .item {
