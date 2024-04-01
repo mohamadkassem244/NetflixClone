@@ -62,3 +62,10 @@ function enableHorizontalScrolling(containerId) {
 
 enableHorizontalScrolling("scrollContainer1");
 enableHorizontalScrolling("scrollContainer2");
+
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if(isMobile) {
+    console.log("This is a mobile device.");
+} else {
+    console.log("This is a desktop device.");
+}
