@@ -65,7 +65,7 @@ enableHorizontalScrolling("scrollContainer2");
 
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 if(isMobile) {
-    console.log("This is a mobile device.");
+    alert("This is a mobile device.");
 } else {
-    console.log("This is a desktop device.");
+  alert("This is a desktop device.");
 }
