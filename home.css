@@ -1,0 +1,228 @@
+:root{
+    --border_radius: 5px;
+    --primary_font_color: white;
+    --button_color: rgb(229, 9, 20);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*Start of Netflix Nav*/
+
+.netflix_nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 80px;
+    padding-left: 10vw;
+    padding-right: 10vw;   
+}
+
+.netflix_nav_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+.netflix_nav_header_left{
+    height: 100%;
+}
+
+.netflix_nav_header_left a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.netflix_nav_header_left a img{
+    height: 40px;
+}
+
+.netflix_nav_header_right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-left: 8px;
+}
+
+.netflix_nav_header_right select{
+    border-radius: var(--border_radius);
+    background-color: transparent;
+    color: white;
+    font-size: 1.4rem;
+    height: 32px;
+    width: 120px;
+    font-weight: 700;
+}
+
+.netflix_nav_header_right select option{
+    color: black;
+}
+
+.netflix_nav_header_right a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: var(--button_color);
+    height: 32px;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: var(--border_radius);
+    width: 77px;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 769px) {
+    .netflix_nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        height: 80px;
+        padding-left: 5vw;
+        padding-right: 5vw;   
+    }
+    .netflix_nav_header_left a img{
+        height: 25px;
+    }
+
+    .netflix_nav_header_right select{
+        width: 80px;
+    }
+}
+
+/*End of Netflix Nav*/
+
+
+/*Start of Section 1*/
+
+.section_1{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%,
+     rgba(0, 0, 0, 0.6) 20%,
+      rgba(0, 0, 0, 0.6) 80%,
+       rgba(0, 0, 0, 0.9) 100%), 
+    url(./images/sss.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary_font_color);
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section_1 h1{
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.section_1 p{
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section_1 h3{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.section_1_input_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 550px;
+}
+
+.section_1_input_container input{
+    height: 55px;
+    border-radius: var(--border_radius);
+    background-color: rgba(34, 34, 34, 0.5);
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    flex: 4;
+    font-size: 1.6rem;
+}
+
+.section_1_input_container input:focus {
+    color: var(--primary_font_color); 
+}
+
+.section_1_input_container input:focus::placeholder{
+    transform: translateY(-17px);
+    transition: transform 0.2s ease-out;
+}
+
+.section_1_input_container button{
+    height: 55px;
+    border-radius: var(--border_radius);
+    border: none;
+    cursor: pointer;
+    background-color: var(--button_color);
+    color: var(--primary_font_color);
+    flex: 2;
+    font-size: 1.9rem;
+}
+
+
+
+@media screen and (max-width: 769px) {
+
+    .section_1{
+        height: 450px;
+    }
+
+    .section_1 h1{
+        font-size: 2.5rem;
+    }
+    
+    .section_1 p{
+        font-size: 2rem;
+    }
+    
+    .section_1 h3{
+        font-size: 1.9rem;
+    }
+
+}
+
+/*End of Section 1*/
+
+
+/*Start of Section 2*/
+
+.section_2{
+    border-top: 8px solid #575757;
+    background-color: black;
+    color: var(--primary_font_color);
+}
+
+/*End of Section 2*/

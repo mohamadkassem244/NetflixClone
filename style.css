@@ -47,9 +47,9 @@ h1 {
 }
 
 .item_img {
-  aspect-ratio: 9/16;
+  object-fit: contain;
   width: 100%;
-}s
+}
 
 .item_title {
   font-size: 2rem;
