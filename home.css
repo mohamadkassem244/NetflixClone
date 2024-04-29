@@ -278,6 +278,7 @@ html {
 
     .section_2_wrapper{
         flex-direction: column;
+        padding: 8vw 6vw;  
     }
 
     .section_2_texts h2{
@@ -380,6 +381,7 @@ html {
 
     .section_3_wrapper{
         flex-direction: column-reverse;
+        padding: 8vw 6vw; 
     }
 
     .section_3_texts h2{
@@ -411,6 +413,70 @@ html {
     border-top: 8px solid #575757;
     background-color: black;
     color: var(--primary_font_color); 
+}
+
+.section_4_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+    padding: 8vw 10vw;  
+}
+
+.section_4_texts{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.section_4_texts h2{
+    font-size: 3.5rem;
+}
+
+.section_4_texts p{
+    font-size: 2rem;
+}
+
+.section_4_tv_container{
+    position: relative;
+    overflow: hidden;
+}
+
+.section_4_tv_container img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.section_4_tv_video{
+    position: absolute;
+    width: 100%;
+    top: 12%;
+    left: 17%;
+}
+
+.section_4_tv_video video {
+    width: 65%;
+    height: auto;
+}
+
+@media screen and (max-width: 769px) {
+
+    .section_4_wrapper{
+        flex-direction: column;
+        padding: 8vw 6vw;  
+    }
+
+    .section_4_texts h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .section_4_texts p{
+        font-size: 1.5rem;
+        text-align: center;
+       
+    }
 }
 
 /*End of Section 4*/
@@ -451,6 +517,7 @@ html {
    
     .section_5{
         flex-direction: column-reverse;
+        padding: 8vw 6vw; 
     }
 
     .section_5_texts h2{
@@ -470,3 +537,13 @@ html {
 }
 
 /*End of Section 5*/
+
+/*Start of Section 6*/
+
+.section_6{
+    border-top: 8px solid #575757;
+    background-color: black;
+    color: var(--primary_font_color); 
+}
+
+/*End of Section 6*/
