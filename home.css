@@ -19,7 +19,7 @@ html {
 /*Start of Netflix Nav*/
 
 .netflix_nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -94,14 +94,6 @@ html {
 
 @media screen and (max-width: 769px) {
     .netflix_nav{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        background-color: transparent;
-        height: 80px;
         padding-left: 5vw;
         padding-right: 5vw;   
     }
@@ -134,6 +126,9 @@ html {
     color: var(--primary_font_color);
     flex-direction: column;
     gap: 25px;
+    padding-left: 5vw;
+    padding-right: 5vw;  
+    padding-top: 7vw; 
 }
 
 .section_1 h1{
@@ -159,16 +154,17 @@ html {
     align-items: center;
     justify-content: space-between;
     gap: 8px;
-    width: 550px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .section_1_input_container input{
-    height: 55px;
+    height: 50px;
     border-radius: var(--border_radius);
     background-color: rgba(34, 34, 34, 0.5);
     border: 1px solid #ccc;
     padding-left: 15px;
-    flex: 4;
+    flex: 5;
     font-size: 1.6rem;
 }
 
@@ -182,7 +178,7 @@ html {
 }
 
 .section_1_input_container button{
-    height: 55px;
+    height: 50px;
     border-radius: var(--border_radius);
     border: none;
     cursor: pointer;
@@ -212,6 +208,14 @@ html {
         font-size: 1.9rem;
     }
 
+    .section_1_input_container input{
+        font-size: 1.5rem;
+    }
+
+    .section_1_input_container button{
+        font-size: 1.4rem;
+    }
+
 }
 
 /*End of Section 1*/
@@ -222,7 +226,176 @@ html {
 .section_2{
     border-top: 8px solid #575757;
     background-color: black;
-    color: var(--primary_font_color);
+    color: var(--primary_font_color); 
+}
+
+.section_2_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8vw;
+    padding: 8vw 10vw;  
+}
+
+.section_2_texts{
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
+.section_2_texts h2{
+    font-size: 3.5rem;
+}
+
+.section_2_texts p{
+    font-size: 2rem;
+}
+
+.section_2_tv_container{
+    position: relative;
+    overflow: hidden;
+}
+
+.section_2_tv_container img{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.section_2_tv_video{
+    position: absolute;
+    width: 100%;
+    top: 22%;
+    left: 15%;
+}
+
+.section_2_tv_video video {
+    width: 70%;
+    height: auto;
+}
+
+@media screen and (max-width: 769px) {
+
+    .section_2_wrapper{
+        flex-direction: column;
+    }
+
+    .section_2_texts h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    
+    .section_2_texts p{
+        font-size: 1.5rem;
+        text-align: center;
+       
+    }
 }
 
 /*End of Section 2*/
+
+
+/*Start of Section 3*/
+
+.section_3{
+    border-top: 8px solid #575757;
+    background-color: black;
+    color: var(--primary_font_color); 
+}
+
+.section_3_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding: 8vw 10vw;  
+}
+
+.section_3_phone_container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section_3_phone_container_img{
+    width: 95%;
+}
+
+.section_3_box{
+    display: flex;
+    position: absolute;
+    border: 2px #ccc solid;
+    overflow: hidden;
+    border-radius: 15px;
+    height: 90px;
+    width: 260px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 12px;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.section_3_box_img_1{
+    height: 100%;
+}
+
+.section_3_download_box_text_1{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.section_3_download_box_text_2{
+    font-size: 1.4rem;
+    color: rgb(0, 113, 235);
+}
+
+.section_3_box_img_2{
+    height: 60%;
+}
+
+.section_3_texts{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section_3_texts h2{
+    font-size: 4rem;
+}
+
+.section_3_texts p{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 769px) {
+
+    .section_3_wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .section_3_texts h2{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    
+    .section_3_texts p{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .section_3_phone_container_img{
+        width: 100%;
+    }
+
+    .section_3_box{
+        height: 80px;
+        width: 300px;
+    }
+}
+
+
+/*End of Section 3*/
