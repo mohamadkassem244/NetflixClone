@@ -331,7 +331,6 @@ html {
     height: 90px;
     width: 260px;
     align-items: center;
-    justify-content: space-between;
     padding: 8px 12px;
     top: 80%;
     left: 50%;
@@ -341,6 +340,11 @@ html {
 
 .section_3_box_img_1{
     height: 100%;
+}
+
+.section_3_download_box_texts{
+    
+    margin-left: 6px;
 }
 
 .section_3_download_box_text_1{
@@ -355,6 +359,7 @@ html {
 
 .section_3_box_img_2{
     height: 60%;
+    margin-left: auto;
 }
 
 .section_3_texts{
@@ -393,9 +398,75 @@ html {
 
     .section_3_box{
         height: 80px;
-        width: 300px;
+        width: 250px;
     }
 }
 
-
 /*End of Section 3*/
+
+
+/*Start of Section 4*/
+
+.section_4{
+    border-top: 8px solid #575757;
+    background-color: black;
+    color: var(--primary_font_color); 
+}
+
+/*End of Section 4*/
+
+
+/*Start of Section 5*/
+
+.section_5{
+    border-top: 8px solid #575757;
+    background-color: black;
+    color: var(--primary_font_color); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+    padding: 8vw 10vw;  
+}
+
+.section_5 img{
+    width: 45%;
+}
+
+.section_5_texts{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.section_5_texts h2{
+    font-size: 4rem;
+}
+
+.section_5_texts p{
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 769px) {
+   
+    .section_5{
+        flex-direction: column-reverse;
+    }
+
+    .section_5_texts h2{
+        text-align: center;
+        font-size: 3.5rem;
+    }
+    
+    .section_5_texts p{
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    .section_5 img{
+        width: 100%;
+    }
+    
+}
+
+/*End of Section 5*/
