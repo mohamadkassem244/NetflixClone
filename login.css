@@ -85,9 +85,8 @@ body{
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    padding-top: 80px;
-    height: 100v;
     justify-content: space-between;
+    padding-top: 80px;
 }
 
 .netflix_login_wrapper{
@@ -95,15 +94,14 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-left: 10vw;
-    padding-right: 10vw;     
 }
 
 .netflix_login{
     background-color: rgba(0, 0, 0, 0.7);
     padding: 48px 68px;
     border-radius: var(--border_radius);
-    min-width: 450px;
+    width: 100%;
+    max-width: 450px;
 }
 
 .netflix_login h1{
@@ -199,7 +197,7 @@ body{
 
     .netflix_login_wrapper{
         padding-left: 5vw;
-        padding-right: 5vw;     
+        padding-right: 5vw;
     }
     
     .netflix_login{
