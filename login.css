@@ -86,6 +86,8 @@ body{
     flex-direction: column;
     gap: 2vw;
     padding-top: 80px;
+    height: 100v;
+    justify-content: space-between;
 }
 
 .netflix_login_wrapper{
@@ -215,7 +217,7 @@ body{
 /*Start of Section Footer*/
 
 .section_footer{
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.7);
     color: var(--primary_font_color); 
     padding: 6vw 10vw;  
 }
