@@ -131,7 +131,8 @@ body {
 @media screen and (max-width: 840px) {
 
   .netflix_nav_header_links{
-    display: none;
+    display: flex;
+    visibility: hidden;
     flex-direction: column;
     position: absolute;
     top: 60px;
@@ -140,6 +141,7 @@ body {
     border-top: 3px solid white;
     width: 45vw;
     padding: 20px;
+    transition: visibility 0.5s ease;
   }
 
   .netflix_nav_header_links::after{
@@ -161,8 +163,9 @@ body {
     display: block;
   }
 
-  .netflix_nav_header_browse:hover + .netflix_nav_header_links{
-    display: flex;
+  .netflix_nav_header_browse:hover + .netflix_nav_header_links,
+  .netflix_nav_header_links:hover {
+    visibility: visible;
   }
 }
 
@@ -184,7 +187,7 @@ body {
 .section_top_details{
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-37%);
   left: 5vw;
   width: 45vw;
 }
@@ -219,14 +222,27 @@ body {
 }
 
 @media screen and (max-width: 840px) {
+
+  .section_top_details img{
+    width: 85%;
+  }
  
   .section_top_details p{
     font-size: 0.8rem;
   }
-  .section_top_details .info_button , .section_top_details .play_button{
+
+  .section_top_details .play_button{
     font-size: 0.8rem;
-    height: 30px;
+    height: 23px;
+    width: 15vw;
   }
+
+  .section_top_details .info_button{
+    font-size: 0.8rem;
+    height: 23px;
+    width: 20vw;
+  }
+  
 }
 
 
