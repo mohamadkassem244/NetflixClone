@@ -87,6 +87,7 @@ body{
     gap: 2vw;
     justify-content: space-between;
     padding-top: 80px;
+    height: 100%;
 }
 
 .netflix_login_wrapper{
