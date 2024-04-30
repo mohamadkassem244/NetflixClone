@@ -81,12 +81,13 @@ body{
 /*Start of Login Wrapper*/
 
 .netflix_login_wrapper{
-    height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 10vw;
+    padding-bottom: 2vw;
 }
 
 .netflix_login{
