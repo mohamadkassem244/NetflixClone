@@ -1,3 +1,14 @@
+window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.getElementById("navbar").classList.add("netflix_nav_scrolled");
+      } else {
+        document.getElementById("navbar").classList.remove("netflix_nav_scrolled");
+      }
+    }
+
+
 function xScrolling(containerId) {
         var container = document.getElementById(containerId);
         var isMouseDown = false;
