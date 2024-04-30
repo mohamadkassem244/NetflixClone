@@ -153,6 +153,62 @@ body {
 
 /*End of Netflix Nav*/
 
+
+/*Start of Section Content*/
+
+.content_container{
+  margin-top: 70px;
+  padding-left: 5vw;
+  padding-right: 5vw;  
+}
+
+.content_container h1{
+  margin: 7px 0 0 7px;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+}
+
+.items_container {
+  white-space: nowrap;
+  cursor: grab;
+  transition: transform 1s ease;
+  overflow-x: scroll; 
+  overflow-y: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.items_container::-webkit-scrollbar {
+  display: none; 
+}
+
+.item_9_16 {
+  display: inline-block;
+  aspect-ratio: 9/16;
+  background-color: transparent;
+  width: 200px;
+  margin: 7px;
+}
+
+.item_16_9 {
+  display: inline-block;
+  aspect-ratio: 16/9;
+  background-color: transparent;
+  width: 200px;
+  margin: 7px;
+}
+
+.item_img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.item_title {
+  font-size: 2rem;
+}
+
+/*End of Netflix Content*/
+
+
 /*Start of Section Footer*/
 
 .section_footer{
@@ -212,42 +268,6 @@ body {
       row-gap: 2.8vw;
   }
 }
+
 /*End of Section Footer*/
 
-
-h1 {
-  margin: 7px 0 0 7px;
-  font-size: clamp(1.5rem, 3vw, 3rem);
-}
-
-.items_container {
-  
-  white-space: nowrap;
-  cursor: grab;
-  transition: transform 1s ease;
-  overflow-x: scroll; 
-  overflow-y: hidden;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.items_container::-webkit-scrollbar {
-  display: none; 
-}
-
-.item {
-  display: inline-block;
-  aspect-ratio: 9/16;
-  background-color: transparent;
-  width: 200px;
-  margin: 7px;
-}
-
-.item_img {
-  object-fit: contain;
-  width: 100%;
-}
-
-.item_title {
-  font-size: 2rem;
-}
