@@ -1,0 +1,266 @@
+:root{
+    --border_radius: 5px;
+    --primary_font_color: white;
+    --button_color: rgb(229, 9, 20);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: url(./images/sss.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+@media screen and (max-width: 769px) {
+    body{
+        background: black;  
+    }
+}
+
+/*Start of Netflix Nav*/
+
+.netflix_nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 80px;
+    padding-left: 10vw;
+    padding-right: 10vw;   
+}
+
+.netflix_nav_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+}
+
+.netflix_nav_header_left{
+    height: 100%;
+}
+
+.netflix_nav_header_left a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.netflix_nav_header_left a img{
+    height: 40px;
+}
+
+
+@media screen and (max-width: 769px) {
+    .netflix_nav{
+        padding-left: 5vw;
+        padding-right: 5vw;   
+    }
+    .netflix_nav_header_left a img{
+        height: 25px;
+    }
+}
+
+/*End of Netflix Nav*/
+
+
+/*Start of Login Wrapper*/
+
+.netflix_login_wrapper{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.netflix_login{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 48px 68px;
+    border-radius: var(--border_radius);
+    min-width: 450px;
+}
+
+.netflix_login h1{
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 2vw;
+}
+
+.netflix_login form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+
+.netflix_login form input{
+    height: 55px;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: #161616b3;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+}
+
+.netflix_login form input:focus {
+    color: var(--primary_font_color); 
+}
+
+.netflix_login form input:focus::placeholder{
+    transform: translateY(-17px);
+    transition: transform 0.2s ease-out;
+}
+
+.netflix_login form .submit_button{
+    height: 45px;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: #e50914;
+    color: white;
+    font-weight: 700;
+}
+
+.netflix_login form p{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.netflix_login form .code_button{
+    height: 45px;
+    border: none;
+    border-radius: var(--border_radius);
+    background-color: #80808066;
+    color: white;
+    font-weight: 700;
+}
+
+.netflix_login form a{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.remember_me_container {
+    height: 40px;
+    display: flex;
+    align-items: center; 
+}
+
+.remember_me_container input {
+    width: 17px;
+    height: 17px; 
+    margin-right: 10px;
+}
+
+.remember_me_container label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.netflix_login form .new_to_netflix {
+    color: white;
+    font-size: 1.5rem; 
+    text-align: start;
+}
+
+.netflix_login form .new_to_netflix a {
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+    .netflix_login{
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .netflix_login form{
+        gap: 3vw;
+    }
+}
+
+/*End of Login Wrapper*/
+
+
+/*Start of Section Footer*/
+
+.section_footer{
+    background-color: rgba(0, 0, 0, 0.85);
+    color: var(--primary_font_color); 
+    padding: 6vw 10vw;  
+}
+
+.section_footer_wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vw;
+}
+
+.section_footer_question a{
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+}
+
+.section_footer_li_container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 1.2vw;
+}
+
+.section_footer_li_container li{
+    list-style: none;
+}
+
+.section_footer_li_container li a{
+    color: rgb(255, 255, 255, 0.7);
+    font-size: 1.5rem;
+}
+
+.section_footer_select select{
+    border-radius: var(--border_radius);
+    background-color: #161616b3;
+    color: white;
+    font-size: 1.5rem;
+    height: 32px;
+    width: 120px;
+    font-weight: 700;
+}
+
+.section_footer_select select option{
+    color: black;
+}
+
+@media screen and (max-width: 769px) {
+
+    .section_footer{
+        border-top: 2px solid #232323;
+    }
+
+    .section_footer_wrapper{
+        gap: 2.8vw;
+    }
+
+    .section_footer_li_container{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 2.8vw;
+    }
+}
+/*End of Section Footer*/
+
