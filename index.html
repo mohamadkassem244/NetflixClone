@@ -1,68 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Netflix</title>
-  </head>
-  <body>
-    <h1>Top Watched</h1>
-    <div class="items_container" id="scrollContainer1">
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="netflix_nav">
+        <div class="netflix_nav_header">
+            <div class="netflix_nav_header_left">
+                <a href="#"><img src="./images/netflix_logo.png"/></a>
+            </div>
+            <div class="netflix_nav_header_right">
+                <select>
+                    <option>English</option>
+                    <option>العربية</option>
+                </select>
+                <a href="#">Sign In</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section_1">
+        <h1>Unlimited movies, TV shows, and more</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+
+        <div class="section_1_input_container">
+            <input placeholder="Email address"/>
+            <button>Get Started <i class="fa-solid fa-angle-right"></i></button>
+        </div>
     </div>
 
-    <h1>New To Netflix</h1>
-    <div class="items_container" id="scrollContainer2">
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
-      <div class="item">
-        <img class="item_img" src="images/one piece.jpg" data-src="images/one piece.jpg" loading="lazy"/><div class="item_title">One Piece</div>
-      </div>
+    <div class="section_2">
+        
+        <div class="section_2_wrapper">
+
+        <div class="section_2_texts">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+
+        <div class="section_2_tv_container">
+
+                <img src="./images/tv.png">
+                <div class="section_2_tv_video">
+                    <video autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4"></video>
+                </div>
+        </div>
+
+        </div>
+        
     </div>
 
-    <script src="./script.js"></script>
-  </body>
+    <div class="section_3">
+        
+       <div class="section_3_wrapper">
+        <div class="section_3_phone_container">
+            <img class="section_3_phone_container_img" src="./images/mobile-0819.jpg">
+            <div class="section_3_box">
+                <img class="section_3_box_img_1" src="./images/boxshot.png">
+                <div class="section_3_download_box_texts">
+                    <div class="section_3_download_box_text_1">Stranger Things</div>
+                    <div class="section_3_download_box_text_2">Downloading...</div>
+                </div>
+                <img class="section_3_box_img_2" src="./images/download-icon.gif">
+            </div>
+        </div>
+        <div class="section_3_texts">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favorites easily and always have something to watch.</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="section_4">
+
+        <div class="section_4_wrapper">
+            <div class="section_4_texts">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+            <div class="section_4_tv_container">
+    
+                    <img src="./images/device-pile.png">
+                    <div class="section_4_tv_video">
+                        <video autoplay="" playsinline="" muted="" loop=""><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" type="video/mp4"></video>
+                    </div>
+            </div>
+            </div>
+    </div>
+
+    <div class="section_5">
+        <img src="./images/kids.png">
+        <div class="section_5_texts">
+            <h2>Create profiles for kids</h2>
+            <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+        </div>
+    </div>
+
+    <div class="section_6">
+            <h2>Frequently Asked Questions</h2>
+            <div class="section_6_buttons_container">
+                <li>
+                    <button onclick="show_answer(0, this)">What is Netflix? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer"> 
+                        Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.
+                        <br><br>
+                        You can watch as much as you want, whenever you want without a single commercial - all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!
+                    </div>
+                </li>
+                <li>
+                    <button onclick="show_answer(1, this)">How much does Netflix cost? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer">
+                        Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from USD 3.99 to USD 9.99 a month. No extra costs, no contracts.
+                    </div>
+                </li>
+                <li>
+                    <button onclick="show_answer(2, this)">Where can I watch? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer">
+                        Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                        <br><br>
+                        You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                    </div>
+                </li>
+                <li>
+                    <button onclick="show_answer(3, this)">How do I cancel? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer">
+                        Netflix is flexible. There are no pesky contracts and no commitments. You can easily cancel your account online in two clicks. There are no cancellation fees - start or stop your account anytime.
+                    </div>
+                </li>
+                <li>
+                    <button onclick="show_answer(4, this)">What can I watch on Netflix? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer">
+                        Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.
+                    </div>
+                </li>
+                <li>
+                    <button onclick="show_answer(5, this)">Is Netflix good for kids? <i class="fa-solid fa-plus"></i></button>
+                    <div class="section_6_answer">
+                        The Netflix Kids experience is included in your membership to give parents control while kids enjoy family-friendly TV shows and movies in their own space.
+                        <br><br>
+                        Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of content kids can watch and block specific titles you don't want kids to see.
+                    </div>
+                </li>
+            </div>
+
+            <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+
+            <div class="section_1_input_container">
+                <input placeholder="Email address"/>
+                <button>Get Started <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+    </div>
+
+    <div class="section_footer">
+
+            <div class="section_footer_wrapper">
+
+                <div class="section_footer_question"><a href="#">Questions? Contact us.</a></div>
+
+                <div class="section_footer_li_container">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Media Center</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Ways to Watch</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Speed Test</a></li>
+                        <li><a href="#">Legal Notices</a></li>
+                        <li><a href="#">Only on Netflix</a></li>
+                </div>
+
+                <div class="section_footer_select">
+                    <select>
+                    <option>English</option>
+                    <option>العربية</option>
+                    </select>
+                </div>
+
+                <div class="section_footer_region">Netflix Lebanon</div>
+
+            </div>
+    </div>
+    
+
+
+<script>
+
+function show_answer(index, button) {
+    const answers = document.querySelectorAll('.section_6_answer');
+    const icons = document.querySelectorAll('.fa-plus');
+    answers.forEach((answer, i) => {
+      if (i !== index) {
+        answer.style.display = 'none';
+        icons[i].classList.remove('rotate');
+      }
+    });
+    const answer = answers[index];
+    const icon = icons[index];
+    answer.style.display = (answer.style.display === 'none' || answer.style.display === '') ? 'block' : 'none';
+    icon.classList.toggle('rotate');
+}
+
+</script>
+
+</body>
 </html>
